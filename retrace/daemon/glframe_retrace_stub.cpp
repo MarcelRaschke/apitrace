@@ -1360,6 +1360,7 @@ void
 FrameRetraceStub::retraceAllMetrics(const RenderSelection &selection,
                                     ExperimentId experimentCount,
                                     OnFrameRetrace *callback) const {
+  return;
   {
     std::lock_guard<std::mutex> l(m_mutex);
     m_current_met_selection = selection.id;
